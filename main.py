@@ -8,7 +8,6 @@ openai.api_key=api_data
 
 completion=openai.Completion()
 
-
 def Reply(question):
     prompt=f'Chando: {question}\n Jarvis: '
     response=completion.create(prompt=prompt, engine="text-davinci-002", stop=['\Chando'], max_tokens=200)
@@ -54,18 +53,6 @@ if __name__ == '__main__':
         
         if 'bye' in query:
             break
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
